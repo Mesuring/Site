@@ -1,9 +1,9 @@
-import CadastroComponente from "../../components/cadastro/cadastro";
+import CadastroComponent from "../../components/cadastro/cadastro";
 
 function CadastroPage(){
     return(
         <main>
-            <CadastroComponente/>
+            <CadastroComponent/>
         </main>
         
     )

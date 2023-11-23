@@ -1,0 +1,108 @@
+main{
+    flex: 20 1 500px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center
+}
+
+.divs3{
+    display: flex;
+    flex-direction: column;
+}
+
+.div1{
+    width: 411px;
+    height: 120px;
+    background-color: white;
+    margin-left: 34px;
+}
+
+.textbox{
+    margin-left: 30px;
+    margin-top: -25px;
+    font-size: 23px;
+}
+
+.valorbox{
+    margin-top: -10px;
+    margin-left: 332px;
+}
+
+.div2{
+    width: 411px;
+    height: 171px;
+    margin-top: 50px;
+    margin-left: 34px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#endereco{
+    width: 282px;
+    height: 59px;
+    margin-top: 24px;
+    border-radius: 50px;
+    border: none;
+    background-color: #D9D9D9;
+    display: flex;
+    text-align: center;
+}
+
+.div3{
+    width: 411px;
+    height: 272px;
+    margin-top: 50px;
+    margin-left: 34px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.quantidade{
+    margin-left: 34px;
+    font-family: Arial;
+    font-size: 20px;
+    display: flex;
+
+}
+
+#quant{
+    width: 98px;
+    height: 41px;
+    margin-left: 10px;
+}
+
+.carrinho{
+    width: 382px;
+    height: 68px;
+    margin-top: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border: #414141 solid 4px;
+    border-radius: 5px;
+    font-size: 25px;
+
+}
+
+.compra{
+    width: 382px;
+    height: 62px;
+    display: flex;
+    justify-content: center;
+    margin-top: 9px;
+    align-items: center;
+    border-radius: 5px;
+    color: white;
+    background-color:#414141;
+    font-size: 25px;
+}

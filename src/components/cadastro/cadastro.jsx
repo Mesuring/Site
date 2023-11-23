@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import style from './cadastro.module.css'
 
-function CadastroComponente(){
+function CadastroComponent(){
     return(
         <main>
             <div className={style.container}>
@@ -27,4 +27,4 @@ function CadastroComponente(){
     )
 }
 
-export default CadastroComponente
+export default CadastroComponent

@@ -1,11 +1,11 @@
 import { useParams } from "react-router-dom"
+import DadosProdutoComponet from "../../components/dadosProduto/dadosProduto";
 
 function ProdutoPage() {
-    const {id} = useParams();
     
     return (
         <div>
-            <h1>Exibindo informações do produto: {id}</h1>
+            <DadosProdutoComponet/>
         </div>
     )
 }

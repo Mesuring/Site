@@ -1,7 +1,7 @@
 import style from './login.module.css'
 import { Link } from 'react-router-dom'
 
-function LoginComponente(){
+function LoginComponent(){
     return(
         <main>
             <div className={style.container}>
@@ -21,4 +21,4 @@ function LoginComponente(){
     )
 }
 
-export default LoginComponente
+export default LoginComponent
