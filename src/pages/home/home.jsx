@@ -17,7 +17,7 @@ import estrela3 from "../../img/estrela3.png"
 
 function HomePage(){
     return (
-        <main>
+        <div className={style.todosProdutos}>
             <div className={style.conteiner}>
                 <ProdutoComponet img={buque} texto="Buquê de Rosas e Alstroemérias Coloridas" estrela={estrela5} valor="R$91,36" id="/1"/>
                 <ProdutoComponet img={buque1} texto="Buquê Colorido de Rosas, Alstroemérias, Gérberas..." estrela={estrela4} valor="R$149,48" id="/2"/>
@@ -32,7 +32,7 @@ function HomePage(){
                 <ProdutoComponet img={arranjo3} texto="Arranjo de Rosas Brancas Em Vaso" estrela={estrela4} valor="R$103,68" id="/9"/>
                 <ProdutoComponet img={arranjo4} texto="Arranjo de 10 Alstroemérias Creme" estrela={estrela4} valor="R$95,08" id="/10"/>
             </div>  
-        </main>
+        </div>
     )
 }
 

@@ -2,7 +2,6 @@ main{
     flex: 20 1 500px;
     height: auto;
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center
 }
@@ -65,25 +64,32 @@ main{
     flex-direction: column;
 
 }
+.alinhaQuant{
+    height: auto;
+    width: 380px;
+    display: flex;
+}
 
 .quantidade{
+    margin-top: 20px;
     margin-left: 34px;
     font-family: Arial;
     font-size: 20px;
     display: flex;
+    align-items: baseline;
 
 }
 
-#quant{
+#quantInp{
     width: 98px;
-    height: 41px;
+    height: 10px;
     margin-left: 10px;
 }
 
 .carrinho{
-    width: 382px;
+    width: 375px;
     height: 68px;
-    margin-top: 38px;
+    margin-top: 25px;
     display: flex;
     justify-content: center;
     align-items: center;

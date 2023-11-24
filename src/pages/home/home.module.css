@@ -2,12 +2,11 @@ body{
     background-color: #DEEFE3;
 }
 
-main{
+.todosProdutos{
     flex: 20 1 500px;
     height: auto;
     display: flex;
     flex-direction: column;
-    
 }
 
 .conteiner{
