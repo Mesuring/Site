@@ -1,7 +1,41 @@
-.rodape{
+footer{
+    flex: 1 1 100vw;
+    height: 215px;
     display: flex;
     margin: 0px;
-    flex: 1 1 100vw;
-    height: 100px;
-    background-color: #414141;
+    background-color: #ffffff;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left{
+    margin-top: 10px;
+    margin-left: 60px;
+}
+
+.left > img{
+    width: 13rem;
+    height: 7.3125rem;
+}
+
+.right{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-right: 60px ;
+    margin-top: 10px;
+}
+.redesSocias{
+    display: flex;
+    margin-top: 25px;
+    margin-right: 60px;
+}
+.redesSocias > a > img{
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+}
+
+.direitos{
+    margin-top: 30px;
 }

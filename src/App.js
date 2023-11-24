@@ -2,6 +2,7 @@ import './App.css';
 import HeaderComponent from './components/header/header';
 import NavComponent from './components/nav/nav';
 import { Outlet } from 'react-router-dom';
+import FooterComponet from './components/footer/footer'
 
 function App() {
     return (
@@ -9,7 +10,7 @@ function App() {
             <HeaderComponent/>
             <NavComponent/>
             <Outlet/>
-            <h1>Footer</h1>
+            <FooterComponet/>
         </div>
     )
 }
