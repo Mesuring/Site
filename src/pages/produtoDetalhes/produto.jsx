@@ -5,9 +5,9 @@ import style from "./produtoDetalhes.module.css"
 function ProdutoPage() {
     
     return (
-        <div className={style.main}>
+        <main>
             <DadosProdutoComponet/>
-        </div>
+        </main>
     )
 }
 

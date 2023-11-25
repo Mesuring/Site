@@ -9,7 +9,7 @@ function DadosProdutoComponet() {
     let img = localStorage.getItem("img")
 
     return (
-        <main>
+        <div className={style.centro}>
             <div classNameName={style.slider}>
                 <img src={img} width="900px" height="675px" />
             </div>
@@ -41,7 +41,7 @@ function DadosProdutoComponet() {
                     </div>
                 </div>
             </div>
-        </main>
+        </div>
     )
 }
 

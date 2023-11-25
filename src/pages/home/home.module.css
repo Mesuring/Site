@@ -1,9 +1,15 @@
 body{
     background-color: #DEEFE3;
 }
-
-.todosProdutos{
+main{
     flex: 20 1 500px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+.todosProdutos{
+    width: auto;
     height: auto;
     display: flex;
     flex-direction: column;
