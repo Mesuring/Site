@@ -20,46 +20,44 @@ const Router = createBrowserRouter([
     path: "/",
     element: <App/>,
     errorElement: <ErroPage/>,
-    children: [
-      {
-        path: "/",
-        element: <HomePage/>
-      },
-      {
-        path: "/:id",
-        element: <ProdutoPage/>
-      },
-      {
-        path: "/Cadastro",
-        element: <CadastroPage/>
-      },
-      {
-        path: "/Login",
-        element: <LoginPage/>
-      },
-      {
-        path: "/Buque-flores",
-        element: <BuquePage/>
-      },
-      {
-        path: "/Arranjo-de-flores",
-        element: <ArranjoPage/>
-      },
-      {
-        path: "/Vazo-de-flores",
-        element: <VazoPage/>
-      },
-      {
-        path: "/Cesta-de-flores",
-        element: <CestaPage/>
-      },
-      {
-        path: "/Presentes",
-        element: <PresentesPage/>
-      },
+    children:[{
+      path: "/",
+      element: <HomePage/>
+    },
+    {
+      path: "/:id",
+      element: <ProdutoPage/>
+    },
+    {
+      path: "/Buque-flores",
+      element: <BuquePage/>
+    },
+    {
+      path: "/Arranjo-de-flores",
+      element: <ArranjoPage/>
+    },
+    {
+      path: "/Vazo-de-flores",
+      element: <VazoPage/>
+    },
+    {
+      path: "/Cesta-de-flores",
+      element: <CestaPage/>
+    },
+    {
+      path: "/Presentes",
+      element: <PresentesPage/>
+    }
     ]
   },
-  
+  {
+    path: "/Cadastro",
+    element: <CadastroPage/>
+  },
+  {
+    path: "/Login",
+    element: <LoginPage/>
+  }
 ])
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
