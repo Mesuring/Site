@@ -16,7 +16,7 @@ function HeaderComponent(){
                     <input type="search" placeholder="Buscar..." id={style.inpBusca}/>
                 </div>
                 <div id={style.lupa}>
-                    <img src={lupa} width="30px" height="30px"/>
+                    <img src={lupa}/>
                 </div>
             </div>
             <div className={style.botoes}>
