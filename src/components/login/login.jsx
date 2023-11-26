@@ -7,14 +7,14 @@ function LoginComponent(){
             <div className={style.container}>
                 <div className={style.box}>
                     <h1>Login</h1>
-                    <label>E-mail:</label>
-                    <input type="text" id={style.email} placeholder="Digite seu e-mail"/>
+                    <label>E-mail</label>
+                    <input type="email" id={style.email} />
                         
-                    <label>Senha:</label>
-                    <input type="password" id={style.senha} name="senha" placeholder="Digite sua senha"/>
+                    <label>Senha</label>
+                    <input type="password" id={style.senha} name="senha" />
                         
                     <button type="submit">Logar</button>
-                    <p>não tem um cadastro? <Link to="/Cadastro">clique aqui!</Link></p>
+                    <p>Não possui conta? <Link to="/Cadastro">Criar</Link></p>
                 </div>
             </div>
         </main>

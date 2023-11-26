@@ -13,7 +13,7 @@ function HeaderComponent(){
             </div>
             <div className={style.busca}>
                 <div className={style.campoBusca}>
-                    <input type="text" placeholder="Buscar..." id={style.inpBusca}/>
+                    <input type="search" placeholder="Buscar..." id={style.inpBusca}/>
                 </div>
                 <div id={style.lupa}>
                     <img src={lupa} width="30px" height="30px"/>

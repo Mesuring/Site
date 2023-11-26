@@ -10,9 +10,7 @@ function DadosProdutoComponet() {
 
     return (
         <div className={style.centro}>
-            <div classNameName={style.slider}>
-                <img src={img} width="900px" height="675px" />
-            </div>
+            <img src={img} id={style.imgFlor}/>
             <div className={style.divs3}>
                 <div className={style.div1}>
                     <img src={estrela5} width="109" height="37" />
@@ -30,14 +28,14 @@ function DadosProdutoComponet() {
                 <div className={style.div3}>
                     <div className={style.alinhaQuant}>
                         <div className={style.quantidade}>
-                            quantidade: <input type="number" id={style.quantInp} />
+                            <label>Quantidade:</label> <input type="number" id={style.quantInp} />
                         </div>
                     </div>
                     <div className={style.carrinho}>
                         Adicionar ao carinho
                     </div>
                     <div className={style.compra}>
-                        Comprar
+                        COMPRAR
                     </div>
                 </div>
             </div>

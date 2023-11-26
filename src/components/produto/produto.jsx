@@ -8,7 +8,7 @@ function ProdutoComponet({ img, texto, estrela, valor, id }) {
     return (
         <div className={style.produto}>
             <div class={style.boximagem}>
-                <img src={img} id={style.imgProduto} width="225" height="168" />
+                <img src={img} id={style.imgProduto} />
             </div>
             <div class={style.boxtexto}>
                 {texto}

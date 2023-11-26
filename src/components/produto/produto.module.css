@@ -1,21 +1,21 @@
 .produto{
-    width: 225  px;
-    height: 310px;
+    width: 14.0625rem;
+    height: 19.3125rem; 
     margin: 15px;
-    border-radius: 10px;
     background-color: white;
-    box-shadow: 0px 0px 10px 0px rgb(0, 0, 0);
+    border: solid 1px rgb(220, 220, 220);
     position: relative;
     transition: all 0.5s cubic-bezier(0.200, 0.88, 0.33, 1)
 }
 
 .produto:hover{
     transform:scale(1.1,1.1);
-    box-shadow: 0px 0px 10px 3px rgb(30, 30, 30);
+    box-shadow: 0px 0px 10px 2px rgb(164, 164, 164);
 }
 
 #imgProduto{
-    border-radius: 10px 10px 0px 0px;
+    width: 225px;
+    height: 168px;
 }
 
 .boxtexto{
@@ -45,17 +45,16 @@
 }
 
 .boxcomprar{
-    width: 202px;
-    height: 41px;
+    width: 12.625rem;
+    height: 2.5625rem;
     margin-left: 11px;   
     margin-right: 9px;
     margin-top: 6px;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 5px;
     color: white;
-    background-color:#414141;
+    background-color:#000000;
 }
 
 a{

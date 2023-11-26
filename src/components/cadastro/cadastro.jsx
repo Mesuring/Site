@@ -1,27 +1,32 @@
 import { Link } from 'react-router-dom'
 import style from './cadastro.module.css'
-import logo from '../../img/logo_semfundo.png'
 
 function CadastroComponent(){
     return(
         <main>
             <div className={style.container}>
-                
                 <div className={style.box}>
-                    <h1>Cadastro</h1>
-                    <label>Nome:</label>
-                    <input type="text" id={style.nome} placeholder="Digite seu nome completo"/>
+                    <h1>Criar conta</h1>
+                    <label>Nome</label>
+                    <input type="text" id={style.nome}/>
                     
-                    <label>CPF:</label>
-                    <input type="number" id={style.cpf}  placeholder="Digite seu CPF"/>
+                    <label>CPF</label>
+                    <input type="number" id={style.cpf}/>
+                    
+                    <label>Aniversário</label>
+                    <input type="date" id={style.niver}/>
+                    
+                    <label>Cep</label>
+                    <input type="number" id={style.cep}/>
 
                     <label>E-mail</label>
-                    <input type="text" id={style.email}  placeholder="Digite seu e-mail"/>
-                    <label>Senha:</label>
-                    <input type="password" id={style.senha} n placeholder="Digite sua senha"/>
+                    <input type="email" id={style.email}/>
+
+                    <label>Senha</label>
+                    <input type="password" id={style.senha}/>
                         
-                    <button type="submit">Cadastrar</button>
-                    <p>já tem um login? <Link to="/Login">clique aqui!</Link></p>
+                    <button type="submit">Criar</button>
+                    <p>Já possui conta? <Link to="/Login">Login</Link></p>
                 </div>
             </div>
         </main>
