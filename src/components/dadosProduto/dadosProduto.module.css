@@ -138,4 +138,11 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    border: 1px solid black;
+    opacity: 1;
+    transition: 0,9s;
+}
+
+.compra:hover{
+    opacity: 0.9;
 }
