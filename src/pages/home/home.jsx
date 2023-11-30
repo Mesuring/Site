@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom"
 import style from "./home.module.css"
 import ProdutoComponet from "../../components/produto/produto"
 import buque from "../../img/buque.png"
