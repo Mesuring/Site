@@ -1,3 +1,5 @@
+
+
 import CadastroComponent from "../../components/cadastro/cadastro";
 
 function CadastroPage(){
