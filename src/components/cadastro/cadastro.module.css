@@ -49,8 +49,10 @@ button {
     cursor: pointer;
     transition: background-color 0.3s;
 }
-
-p {
-    margin-top: 20px;
+.erroMessage{
+    color: red;
+}
+p{
+    margin-top: 100px;
     color: #000000;
 }
