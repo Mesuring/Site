@@ -1,68 +1,83 @@
-import React from 'react';
-import { yupResolver } from '@hookform/resolvers/yup';
-import * as yup from 'yup';
-import { Link } from 'react-router-dom';
-import { useForm } from 'react-hook-form'; 
-
+import React, { useState } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
 import style from './cadastro.module.css';
 
-const validation = yup.object().shape({
-    nome: yup.string().required(),
-    cpf: yup.number().required(),
-    aniversario: yup.date().required(),
-    cep: yup.number().required(),
-    email: yup.string().required(),
-    senha: yup.string().required()
-});
-
 function CadastroComponent() {
-    const { register, handleSubmit, formState: { errors } } = useForm({
-        resolver: yupResolver(validation),
-    });
+    const [nome, setNome] = useState();
+    const [cpf, setCpf] = useState();
+    const [aniversario, setAniversario] = useState();
+    const [cep, setCep] = useState();
+    const [email, setEmail] = useState();
+    const [senha, setSenha] = useState();
+    const [error, setError] = useState("");
+    const navigate = useNavigate();
 
-    const [errorMessage, setErrorMessage] = React.useState('');
-
-    const criaCadastro = (data) => {
-        // verifica se há erros antes de enviar os dados
-        if (Object.keys(errors).length === 0) {
-        console.log('Dados enviados:', data);
-        setErrorMessage(''); // Limpa a mensagem de erro se não houver erros
-        } else {
-        setErrorMessage('Preencha todos os campos.');
-        }
-    }; 
+    const criaCadastro = () => {
+        if (!nome | !cpf | !aniversario | !cep | !email | !senha) {
+          setError("Preencha todos os campos");
+        } 
+    }
 
     return (
         <main>
-        <form onSubmit={handleSubmit(criaCadastro)}>
-            <div className={style.box}>
-            <h1>Criar conta</h1>
-            <label>Nome</label>
-            <input type="text" id={style.nome} {...register('nome')} />
+            <div className={style.form}>
+                <div className={style.box}>
+                <h1>Criar conta</h1>
+                <label>Nome</label>
 
-            <label>CPF</label>
-            <input type="number" id={style.cpf} {...register('cpf')} />
+                <input 
+                type="text" 
+                id={style.nome} 
+                value={nome} 
+                onChange={(e) => [setNome(e.target.value), setError("")]}
+                />
 
-            <label>Aniversário</label>
-            <input type="date" id={style.aniversario} {...register('aniversario')} />
+                <label>CPF</label>
+                <input 
+                type="number" 
+                id={style.cpf} 
+                value={cpf} 
+                onChange={(e) => [setCpf(e.target.value), setError("")]} 
+                />
 
-            <label>Cep</label>
-            <input type="number" id={style.cep} {...register('cep')} />
+                <label>Aniversário</label>
+                <input 
+                type="date" 
+                id={style.aniversario}  
+                value={aniversario} 
+                onChange={(e) => [setAniversario(e.target.value), setError("")]}
+                />
 
-            <label>E-mail</label>
-            <input type="email" id={style.email} {...register('email')} />
+                <label>Cep</label>
+                <input 
+                type="number" 
+                id={style.cep} 
+                value={cep} 
+                onChange={(e) => [setCep(e.target.value), setError("")]}
+                />
 
-            <label>Senha</label>
-            <input type="password" id={style.senha} {...register('senha')} />
+                <label>E-mail</label>
+                <input 
+                type="email" 
+                id={style.email} 
+                value={email} 
+                onChange={(e) => [setEmail(e.target.value), setError("")]}
+                 />
 
-            <p className={style.erroMessage}>
-                {Object.values(errors).length > 0 && 'Preencha todos os campos'}
-            </p>
+                <label>Senha</label>
+                <input 
+                type="password" 
+                id={style.senha}
+                value={senha} 
+                onChange={(e) => [setSenha(e.target.value), setError("")]}
+                />
 
-            <button type="submit">Criar</button>
-            <p>Já possui conta? <Link to="/Login">Logar</Link></p>
+                <labelError>{error}</labelError>
+
+                <button onClick={criaCadastro}>Criar</button>
+                <p>Já possui conta? <Link to="/Login">Logar</Link></p>
+                </div>
             </div>
-        </form>
         </main>
     );
 }
