@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 function LoginComponent(){
     return(
         <main>
-            <div className={style.container}>
+            <form>
                 <div className={style.box}>
                     <h1>Login</h1>
                     <label>E-mail</label>
@@ -16,7 +16,7 @@ function LoginComponent(){
                     <button type="submit">Logar</button>
                     <p>Não possui conta? <Link to="/Cadastro">Criar</Link></p>
                 </div>
-            </div>
+            </form>
         </main>
     )
 }

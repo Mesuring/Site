@@ -60,7 +60,7 @@ function CadastroComponent() {
             </p>
 
             <button type="submit">Criar</button>
-
+            <p>Já possui conta? <Link to="/Login">Logar</Link></p>
             </div>
         </form>
         </main>
