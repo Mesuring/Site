@@ -1,22 +1,28 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import style from './cadastro.module.css';
+import { data } from 'browserslist';
+import axios from 'axios';
 
 function CadastroComponent() {
-    const [nome, setNome] = useState();
-    const [cpf, setCpf] = useState();
-    const [aniversario, setAniversario] = useState();
-    const [cep, setCep] = useState();
-    const [email, setEmail] = useState();
-    const [senha, setSenha] = useState();
+    const [nome, setNome] = useState("");
+    const [cpf, setCpf] = useState("");
+    const [aniversario, setAniversario] = useState("");
+    const [cep, setCep] = useState("");
+    const [email, setEmail] = useState("");
+    const [senha, setSenha] = useState("");
     const [error, setError] = useState("");
     const navigate = useNavigate();
 
-    const criaCadastro = () => {
-        if (!nome | !cpf | !aniversario | !cep | !email | !senha) {
-          setError("Preencha todos os campos");
-        } 
-    }
+    const criaCadastro = (data) => {axios.post("http://localhost:3001/cliente/cadastro", data)
+            .then(() => {
+                console.log("deu certo")
+            })
+            .catch(() =>{
+                console.log("deu errado")
+            })
+        }
+    
 
     return (
         <main>
@@ -62,7 +68,7 @@ function CadastroComponent() {
                 id={style.email} 
                 value={email} 
                 onChange={(e) => [setEmail(e.target.value), setError("")]}
-                 />
+                />
 
                 <label>Senha</label>
                 <input 
