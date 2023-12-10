@@ -106,7 +106,6 @@ function CadastroComponent() {
             'Content-Type': 'application/json',
         },
     })
-    
         .then(() => {   
             console.log("Cadastro realizado com sucesso!")
         })

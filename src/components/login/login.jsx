@@ -23,6 +23,7 @@ function LoginComponent(){
             } else {
                 // Se a senha estiver incorreta, exibe uma mensagem de erro
                 setError('Senha incorreta. Tente novamente.');
+                console.log("erro:", error)
             }
         } catch (error) {
             console.error('Erro no login:', error);
