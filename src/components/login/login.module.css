@@ -4,7 +4,7 @@ main {
     background-color: rgb(255, 255, 255);
 }
 
-form {
+.form {
     height: 100vh;
     display: flex;
     flex-direction: row;
@@ -50,6 +50,10 @@ button {
     padding: 10px 20px;
     cursor: pointer;
     transition: background-color 0.3s;
+}
+
+.error{
+    color: red;
 }
 
 p {
