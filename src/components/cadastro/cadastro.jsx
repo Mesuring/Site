@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import blogFetch from '../../axios/config.js'
 import style from './cadastro.module.css';
 import axios from 'axios';
 
@@ -101,7 +102,7 @@ function CadastroComponent() {
         senha: senha
     };
 
-    axios.post("http://localhost:3001/cliente/cadastro", data, {
+    axios.post(blogFetch + "/cliente/cadastro", data, {
         headers: {
             'Content-Type': 'application/json',
         },
