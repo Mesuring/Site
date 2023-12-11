@@ -52,7 +52,7 @@ function LoginComponent(){
                     {error && <p className={style.error}>{error}</p>}
 
                     <button onClick={verificaLogin}>Logar</button>
-                    <p>Não possui conta? <Link to="/Cadastro">Criar</Link></p>
+                    <p>Não possui conta? <Link to="/cadastro">Criar</Link></p>
                 </div>
             </div>
         </main>

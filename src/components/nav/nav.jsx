@@ -6,11 +6,11 @@ function NavComponent() {
         <nav>
             <div className={style.barra}>
                 {<div className={style.text}>
-                    <Link to="/Buque-flores">Buquês de flores</Link>
-                    <Link to="/Arranjo-de-flores">Arranjo de flores</Link>
-                    <Link to="/Vazo-de-flores">Vazo de flores</Link>
-                    <Link to="/Cesta-de-flores">Cesta de flores</Link>
-                    <Link to="/Presentes">Presentes</Link>
+                    <Link to="/buque-flores">Buquês de flores</Link>
+                    <Link to="/arranjo-de-flores">Arranjo de flores</Link>
+                    <Link to="/vazo-de-flores">Vazo de flores</Link>
+                    <Link to="/cesta-de-flores">Cesta de flores</Link>
+                    <Link to="/presentes">Presentes</Link>
                 </div>}
             </div>
         </nav>

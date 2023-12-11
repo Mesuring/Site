@@ -197,7 +197,7 @@ function CadastroComponent() {
                     <labelError>{error}</labelError>
 
                     <button onClick={criaCadastro}>Criar</button>
-                    <p>Já possui conta? <Link to="/Login">Logar</Link></p>
+                    <p>Já possui conta? <Link to="/login">Logar</Link></p>
                 </div>
                 
             </div>
