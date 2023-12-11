@@ -25,7 +25,7 @@ function HeaderComponent(){
                 </div>
                 <div className={style.loginText}>
                     Bem vindo(a)<br/>
-                    <Link to="/login">Entrar</Link> ou <Link to="/cadastro">Cadastrar</Link>
+                    "nome do usuario"
                 </div>
                 <div className={style.carinho}>
                     <img src={carrinho} width="55px" height="55px"/>

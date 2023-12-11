@@ -11,24 +11,22 @@ function LoginComponent(){
 
     const verificaLogin = async () => {
         try {
-        const response = await axios.post('http://localhost:3001/cliente/login', {
+        const res = await axios.post('http://localhost:3001/cliente/login', {
             email: email,
             senha: senha,
         });
-            // Verifica se o login foi bem-sucedido com base na resposta do backend
-            if (response.data.success) {
-                console.log('Login bem-sucedido:', response.data);
-                navigate('/home');
 
-            } else {
-                // Se a senha estiver incorreta, exibe uma mensagem de erro
-                setError('Senha incorreta. Tente novamente.');
-                console.log("erro:", error)
-            }
+        const token = res.data.token;
+        localStorage.setItem('token', token);
+
+        navigate('/home');
         } catch (error) {
+            setError("falha ao fazer login.")
             console.error('Erro no login:', error);
         }
     };
+
+    
 
     return(
         <main>

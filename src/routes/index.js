@@ -11,7 +11,11 @@ import PresentesPage from '../pages/presentes/presentes';
 import VazoPage from '../pages/vazo-de-flores/vazo';
 import App from '../App';
 
-const isAuthenticated = true; 
+const isAuthenticated = localStorage.getItem('token') !== null;
+
+// const PrivateRoute = ({ element }) => {
+//     return isAuthenticated ? element : <Navigate to="/login" />;
+// };
 
 const RoutesApp = () => {
     const publicRoutes = (
