@@ -11,9 +11,11 @@ import PresentesPage from '../pages/presentes/presentes';
 import VazoPage from '../pages/vazo-de-flores/vazo';
 import App from '../App';
 
-const isAuthenticated = localStorage.getItem('token') !== null;
+const isAuthenticated = false;
 
-// const PrivateRoute = ({ element }) => {
+// const isAuthenticated = localStorage.getItem('token') !== null;
+
+// const privateRoutes = ({ element }) => {
 //     return isAuthenticated ? element : <Navigate to="/login" />;
 // };
 

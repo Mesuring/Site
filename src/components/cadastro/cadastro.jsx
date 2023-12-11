@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import style from './cadastro.module.css';
 import axios from 'axios';
 
@@ -14,6 +14,7 @@ function CadastroComponent() {
     const [aniversario, setAniversario] = useState("");
     const [senha, setSenha] = useState("");
     const [error, setError] = useState("");
+    const navigate = useNavigate();
 
     const criaCadastro = () => {    
     // Verificações para o campo "primeiro nome"
@@ -108,6 +109,8 @@ function CadastroComponent() {
     })
         .then(() => {   
             console.log("Cadastro realizado com sucesso!")
+            navigate("/login")
+
         })
         .catch((error) => {
             console.error("Erro ao cadastrar:", error.response ? error.response.data : error.message);

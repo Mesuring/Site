@@ -9,7 +9,17 @@ function LoginComponent(){
     const [error, setError] = useState(null);
     const navigate = useNavigate();   
 
-    const verificaLogin = async () => {
+    if (!email) {
+        setError("Por favor, preencha o campo email.");
+        return;
+    }
+
+    if (!senha) {
+        setError("Por favor, insira a senha.");
+        return;
+    }
+
+    const verificaLogin = async (e) => {
         try {
         const res = await axios.post('http://localhost:3001/cliente/login', {
             email: email,
@@ -25,8 +35,6 @@ function LoginComponent(){
             console.error('Erro no login:', error);
         }
     };
-
-    
 
     return(
         <main>
